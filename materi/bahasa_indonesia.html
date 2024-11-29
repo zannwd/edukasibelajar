@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi Bahasa Indonesia</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        background: #f2f7ff;
+        margin: 0;
+        padding: 0;
+      }
+      /* Header Styling */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+      }
+
+      header .logo h1 {
+        font-size: 18px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Tombol hamburger */
+      .menu-toggle {
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        display: none; /* Tombol hamburger default disembunyikan */
+      }
+
+      /* Menampilkan menu pada layar besar */
+      #navbar {
+        display: block; /* Menu selalu terlihat pada layar besar */
+      }
+
+      #navbar.hidden {
+        display: none; /* Menu disembunyikan jika kelas 'hidden' ditambahkan */
+      }
+
+      /* Responsif untuk layar kecil */
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          gap: 10px;
+          background-color: #4caf50;
+          position: absolute;
+          top: 60px;
+          right: 0;
+          width: 200px;
+          padding: 10px;
+          border-radius: 0 0 5px 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu-toggle {
+          display: block; /* Tombol hamburger muncul di layar kecil */
+        }
+      }
+
+      /* Responsive Menu */
+      #navbar.hidden {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          gap: 10px;
+          background-color: #4caf50;
+          position: absolute;
+          top: 60px;
+          right: 0;
+          width: 200px;
+          padding: 10px;
+          border-radius: 0 0 5px 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu-toggle {
+          display: block;
+        }
+      }
+      section {
+        max-width: 100%;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      section h2 {
+        color: #4caf50;
+        margin-bottom: 15px;
+      }
+      ul,
+      ol {
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background: #333;
+        color: white;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Belajar Seru untuk Anak SD</h1>
+      </div>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <nav id="navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="matimatika.html">Matematika</a></li>
+          <li><a href="bahasa_indonesia.html">Bahasa Indonesia</a></li>
+          <li><a href="ipa.html">Ilmu Pengetahuan Alam</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Kosa Kata Dasar</h2>
+      <p>
+        Kosa kata dasar adalah kata-kata yang sering digunakan sehari-hari.
+        Contohnya:
+      </p>
+      <ul>
+        <li><b>Kata benda:</b> rumah, buku, meja, pensil, tas, sepeda.</li>
+        <li>
+          <b>Kata kerja:</b> makan, tidur, belajar, bermain, menulis, membaca.
+        </li>
+        <li><b>Kata sifat:</b> besar, kecil, cantik, pintar, tinggi, rajin.</li>
+      </ul>
+      <p>
+        <b>Latihan:</b> Buatlah daftar 5 kata benda, kata kerja, dan kata sifat
+        lainnya yang sering digunakan!
+      </p>
+    </section>
+
+    <section>
+      <h2>Tata Bahasa Sederhana</h2>
+      <p>
+        Dalam Bahasa Indonesia, kalimat terdiri dari subjek (S), predikat (P),
+        dan objek (O). Contoh:
+      </p>
+      <p><b>Andi (S)</b> membaca (P) buku (O).</p>
+      <p><b>Latihan:</b></p>
+      <ol>
+        <li>Buatlah kalimat dengan subjek, predikat, dan objek!</li>
+        <li>Contoh: Ibu memasak nasi.</li>
+        <li>
+          Tuliskan kalimat sederhana lainnya dengan struktur SPOK (Subjek,
+          Predikat, Objek, Keterangan).
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Cerita Pendek</h2>
+      <p>Bacalah cerita pendek berikut:</p>
+      <p><b>Judul:</b> Kelinci yang Pintar</p>
+      <p>
+        Suatu hari, ada seekor kelinci yang tinggal di hutan. Ia ingin
+        melindungi dirinya dari serigala. Kelinci membuat jebakan, dan akhirnya
+        serigala terjebak. Kelinci pun hidup dengan aman.
+      </p>
+      <p><b>Latihan:</b></p>
+      <ul>
+        <li>Apa yang dilakukan kelinci untuk melindungi dirinya?</li>
+        <li>Bagaimana perasaan kelinci setelah serigala terjebak?</li>
+        <li>Buatlah cerita pendek serupa dengan tema hewan lain!</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pemahaman Membaca</h2>
+      <p>Bacalah paragraf berikut:</p>
+      <blockquote>
+        "Bunga melati adalah salah satu bunga yang harum dan indah. Banyak orang
+        menanam bunga melati di taman mereka untuk mempercantik halaman. Selain
+        itu, bunga melati juga sering digunakan dalam upacara adat di berbagai
+        daerah."
+      </blockquote>
+      <p><b>Latihan:</b></p>
+      <ul>
+        <li>Apa manfaat dari bunga melati?</li>
+        <li>Di mana bunga melati sering ditemukan?</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Menulis Cerita</h2>
+      <p>
+        Tuliskan cerita pendek tentang kegiatanmu hari ini. Gunakan struktur:
+      </p>
+      <ul>
+        <li><b>Awal:</b> Mulai cerita dengan aktivitas pagi hari.</li>
+        <li><b>Tengah:</b> Ceritakan hal menarik yang kamu alami.</li>
+        <li><b>Akhir:</b> Ceritakan bagaimana kegiatanmu berakhir.</li>
+      </ul>
+    </section>
+
+    <footer>Edukasi Belajar Anak SD</footer>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navbar = document.getElementById("navbar");
+
+      // Toggle untuk layar kecil
+      menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("hidden");
+      });
+
+      // Pastikan menu terlihat pada layar besar
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+          navbar.classList.remove("hidden"); // Tampilkan menu
+        }
+      });
+    </script>
+  </body>
+</html>

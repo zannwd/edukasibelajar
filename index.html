@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edukasi Anak SD</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Belajar Seru untuk Anak SD</h1>
+      </div>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <nav id="navbar">
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="materi/matimatika.html">Matematika</a></li>
+          <li><a href="materi/bahasa_indonesia.html">Bahasa Indonesia</a></li>
+          <li><a href="materi/ipa.html">Ilmu Pengetahuan Alam</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Konten Gambar dan Video -->
+    <section id="media">
+      <div class="media-container">
+        <h2>Belajar Melalui Media Interaktif</h2>
+        <div class="media-content">
+          <!-- Video -->
+          <div class="video-section">
+            <h3>Video Pembelajaran Bahasa Indonesia</h3>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/vsLPEutCqpA?si=k0fmf3B-AxjWf3Rg"
+              title="Pelajaran Bahasa Indonesia"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video-section">
+            <h3>Video Pembelajaran IPA</h3>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/wAr5DARC6rc?si=zhr3K15ixfsgmxP7"
+              title="Pelajaran IPA"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video-section">
+            <h3>Video Pembelajaran Matematika</h3>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/QyHV6KdoGGY?si=zcm7Q7W6JBoCxjCa"
+              title="Pelajaran Matematika"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="materi">
+      <h2>Materi Pelajaran</h2>
+      <div class="card">
+        <h3>Matematika</h3>
+        <p>Belajar penjumlahan, pengurangan, perkalian, dan pembagian.</p>
+        <a href="materi/matimatika.html">Baca Selengkapnya</a>
+      </div>
+      <div class="card">
+        <h3>Bahasa Indonesia</h3>
+        <p>Pelajari kosa kata, tata bahasa, dan cerita pendek.</p>
+        <a href="materi/bahasa_indonesia.html">Baca Selengkapnya</a>
+      </div>
+      <div class="card">
+        <h3>IPA</h3>
+        <p>Mengenal tubuh manusia, hewan, tumbuhan, dan lingkungan.</p>
+        <a href="materi/ipa.html">Baca Selengkapnya</a>
+      </div>
+    </section>
+
+    <section id="video">
+      <div class="card">
+        <h2>Video Pembelajaran</h2>
+        <p>Berikut adalah video-video menarik:</p>
+        <ul>
+          <a
+            href="https://youtu.be/usJG3la8ib8?si=96ICoGSutY4rui58"
+            target="_blank"
+            >Video Matematika: Belajar Perkalian</a
+          ><br />
+          <a
+            href="https://youtu.be/P0hSzcBEPZg?si=6t34LkllyVA485jb"
+            target="_blank"
+            >Video IPA: Mengenal Tumbuhan</a
+          ><br />
+          <a
+            href="https://youtu.be/6679C68GW50?si=Fv71-nYbLnU_w-EZ"
+            target="_blank"
+            >Video Bahasa Indonesia: Cerita Pendek</a
+          ><br />
+        </ul>
+      </div>
+    </section>
+
+    <section id="sumber">
+      <div class="card">
+        <h2>Sumber Belajar</h2>
+        <p>Kunjungi link berikut untuk belajar lebih lanjut:</p>
+        <ul>
+          <a href="https://belajar.kemdikbud.go.id/" target="_blank"
+            >Rumah Belajar</a
+          ><br />
+          <a href="https://www.ruangguru.com" target="_blank">Ruangguru</a
+          ><br />
+          <a href="https://cakap.com/" target="_blank">Cakap</a
+          ><br />
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>Edukasi Belajar Anak SD</p>
+    </footer>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navbar = document.getElementById("navbar");
+
+      // Toggle untuk layar kecil
+      menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("hidden");
+      });
+
+      // Pastikan menu terlihat pada layar besar
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+          navbar.classList.remove("hidden"); // Tampilkan menu
+        }
+      });
+    </script>
+  </body>
+</html>

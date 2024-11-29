@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi Matematika</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        background: #f8f9fa;
+        margin: 0;
+        padding: 0;
+      }
+      /* Header Styling */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+      }
+
+      header .logo h1 {
+        font-size: 18px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Tombol hamburger */
+      .menu-toggle {
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        display: none; /* Tombol hamburger default disembunyikan */
+      }
+
+      /* Menampilkan menu pada layar besar */
+      #navbar {
+        display: block; /* Menu selalu terlihat pada layar besar */
+      }
+
+      #navbar.hidden {
+        display: none; /* Menu disembunyikan jika kelas 'hidden' ditambahkan */
+      }
+
+      /* Responsif untuk layar kecil */
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          gap: 10px;
+          background-color: #4caf50;
+          position: absolute;
+          top: 60px;
+          right: 0;
+          width: 200px;
+          padding: 10px;
+          border-radius: 0 0 5px 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu-toggle {
+          display: block; /* Tombol hamburger muncul di layar kecil */
+        }
+      }
+
+      /* Responsive Menu */
+      #navbar.hidden {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          gap: 10px;
+          background-color: #4caf50;
+          position: absolute;
+          top: 60px;
+          right: 0;
+          width: 200px;
+          padding: 10px;
+          border-radius: 0 0 5px 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu-toggle {
+          display: block;
+        }
+      }
+      section {
+        max-width: 100%;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      section h2 {
+        color: #4caf50;
+        margin-bottom: 15px;
+      }
+      ul,
+      ol {
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background: #333;
+        color: white;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Belajar Seru untuk Anak SD</h1>
+      </div>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <nav id="navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="matimatika.html">Matematika</a></li>
+          <li><a href="bahasa_indonesia.html">Bahasa Indonesia</a></li>
+          <li><a href="ipa.html">Ilmu Pengetahuan Alam</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Belajar Penjumlahan</h2>
+      <p>
+        Penjumlahan adalah salah satu operasi dasar dalam matematika. Dalam
+        penjumlahan, dua atau lebih angka dijumlahkan untuk mendapatkan hasil.
+      </p>
+      <p><b>Contoh:</b></p>
+      <ul>
+        <li>2 + 3 = 5</li>
+        <li>7 + 5 = 12</li>
+        <li>10 + 20 = 30</li>
+      </ul>
+      <p><b>Latihan:</b></p>
+      <ol>
+        <li>Hitunglah 4 + 6 = ?</li>
+        <li>Berapa hasil dari 15 + 9 = ?</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Belajar Pengurangan</h2>
+      <p>
+        Pengurangan adalah operasi matematika di mana satu angka dikurangi dari
+        angka lainnya untuk mendapatkan hasil.
+      </p>
+      <p><b>Contoh:</b></p>
+      <ul>
+        <li>5 - 3 = 2</li>
+        <li>10 - 4 = 6</li>
+        <li>20 - 15 = 5</li>
+      </ul>
+      <p><b>Latihan:</b></p>
+      <ol>
+        <li>Hitunglah 8 - 3 = ?</li>
+        <li>Berapa hasil dari 25 - 7 = ?</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Belajar Perkalian</h2>
+      <p>
+        Perkalian adalah operasi matematika di mana satu angka dikalikan dengan
+        angka lainnya.
+      </p>
+      <p><b>Contoh:</b></p>
+      <ul>
+        <li>2 × 3 = 6</li>
+        <li>5 × 4 = 20</li>
+        <li>10 × 10 = 100</li>
+      </ul>
+      <p><b>Latihan:</b></p>
+      <ol>
+        <li>Hitunglah 6 × 7 = ?</li>
+        <li>Berapa hasil dari 8 × 9 = ?</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Belajar Pembagian</h2>
+      <p>
+        Pembagian adalah operasi matematika di mana satu angka dibagi oleh angka
+        lainnya.
+      </p>
+      <p><b>Contoh:</b></p>
+      <ul>
+        <li>6 ÷ 2 = 3</li>
+        <li>20 ÷ 5 = 4</li>
+        <li>100 ÷ 10 = 10</li>
+      </ul>
+      <p><b>Latihan:</b></p>
+      <ol>
+        <li>Hitunglah 18 ÷ 3 = ?</li>
+        <li>Berapa hasil dari 40 ÷ 8 = ?</li>
+      </ol>
+    </section>
+
+    <footer>Edukasi Belajar Anak SD</footer>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navbar = document.getElementById("navbar");
+
+      // Toggle untuk layar kecil
+      menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("hidden");
+      });
+
+      // Pastikan menu terlihat pada layar besar
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+          navbar.classList.remove("hidden"); // Tampilkan menu
+        }
+      });
+    </script>
+  </body>
+</html>

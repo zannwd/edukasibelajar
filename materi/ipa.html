@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi IPA</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        background: #f2f7ff;
+        margin: 0;
+        padding: 0;
+      }
+      /* Header Styling */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+      }
+
+      header .logo h1 {
+        font-size: 18px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Tombol hamburger */
+      .menu-toggle {
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        display: none; /* Tombol hamburger default disembunyikan */
+      }
+
+      /* Menampilkan menu pada layar besar */
+      #navbar {
+        display: block; /* Menu selalu terlihat pada layar besar */
+      }
+
+      #navbar.hidden {
+        display: none; /* Menu disembunyikan jika kelas 'hidden' ditambahkan */
+      }
+
+      /* Responsif untuk layar kecil */
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          gap: 10px;
+          background-color: #4caf50;
+          position: absolute;
+          top: 60px;
+          right: 0;
+          width: 200px;
+          padding: 10px;
+          border-radius: 0 0 5px 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu-toggle {
+          display: block; /* Tombol hamburger muncul di layar kecil */
+        }
+      }
+
+      /* Responsive Menu */
+      #navbar.hidden {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          gap: 10px;
+          background-color: #4caf50;
+          position: absolute;
+          top: 60px;
+          right: 0;
+          width: 200px;
+          padding: 10px;
+          border-radius: 0 0 5px 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu-toggle {
+          display: block;
+        }
+      }
+      section {
+        max-width: 100%;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      section h2 {
+        color: #4caf50;
+        margin-bottom: 15px;
+      }
+      ul,
+      ol {
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background: #333;
+        color: white;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Belajar Seru untuk Anak SD</h1>
+      </div>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <nav id="navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="matimatika.html">Matematika</a></li>
+          <li><a href="bahasa_indonesia.html">Bahasa Indonesia</a></li>
+          <li><a href="ipa.html">Ilmu Pengetahuan Alam</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Tubuh Manusia</h2>
+      <p>
+        Tubuh manusia memiliki banyak organ penting yang bekerja sama agar tubuh
+        berfungsi dengan baik. Beberapa organ penting adalah:
+      </p>
+      <ul>
+        <li>
+          <b>Otak:</b> Mengatur pikiran, gerakan tubuh, dan memproses informasi.
+        </li>
+        <li>
+          <b>Jantung:</b> Memompa darah yang membawa oksigen dan nutrisi ke
+          seluruh tubuh.
+        </li>
+        <li>
+          <b>Paru-paru:</b> Mengambil oksigen dari udara dan membuang karbon
+          dioksida.
+        </li>
+        <li>
+          <b>Lambung:</b> Membantu mencerna makanan sebelum diserap oleh usus.
+        </li>
+        <li>
+          <b>Ginjal:</b> Menyaring darah dan membuang zat sisa dalam bentuk
+          urine.
+        </li>
+      </ul>
+      <p><b>Latihan:</b></p>
+      <ol>
+        <li>Sebutkan lima organ tubuh manusia beserta fungsinya!</li>
+        <li>Mengapa otak disebut sebagai pusat kendali tubuh?</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Hewan dan Tumbuhan</h2>
+      <p>
+        Hewan dan tumbuhan memiliki hubungan saling ketergantungan dalam
+        ekosistem. Beberapa peran penting mereka adalah:
+      </p>
+      <ul>
+        <li>
+          <b>Hewan:</b> Membantu penyerbukan bunga (contoh: lebah, kupu-kupu)
+          dan menyebarkan biji (contoh: burung).
+        </li>
+        <li>
+          <b>Tumbuhan:</b> Menghasilkan oksigen melalui fotosintesis dan
+          menyediakan makanan bagi hewan.
+        </li>
+      </ul>
+      <p><b>Latihan:</b></p>
+      <ul>
+        <li>Sebutkan hewan yang berperan dalam penyerbukan bunga!</li>
+        <li>Mengapa fotosintesis sangat penting bagi kehidupan di Bumi?</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Lingkungan</h2>
+      <p>
+        Lingkungan adalah tempat hidup bagi manusia, hewan, dan tumbuhan. Untuk
+        menjaga keseimbangan ekosistem, kita harus merawat lingkungan dengan
+        cara:
+      </p>
+      <ul>
+        <li>Buang sampah pada tempatnya agar lingkungan tetap bersih.</li>
+        <li>Menanam pohon untuk menjaga kualitas udara dan mencegah erosi.</li>
+        <li>
+          Mengurangi penggunaan plastik untuk mengurangi limbah yang sulit
+          terurai.
+        </li>
+        <li>Menghemat air dan energi untuk keberlanjutan sumber daya alam.</li>
+      </ul>
+      <p><b>Latihan:</b></p>
+      <ul>
+        <li>Sebutkan lima cara menjaga lingkungan dengan baik!</li>
+        <li>
+          Apa dampak buruk yang terjadi jika kita tidak menjaga lingkungan?
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Perubahan Iklim</h2>
+      <p>
+        Perubahan iklim adalah perubahan jangka panjang pada suhu dan pola cuaca
+        di Bumi. Penyebab utamanya adalah aktivitas manusia seperti:
+      </p>
+      <ul>
+        <li>Penggunaan bahan bakar fosil yang menghasilkan gas rumah kaca.</li>
+        <li>
+          Penebangan hutan yang mengurangi kemampuan Bumi menyerap karbon
+          dioksida.
+        </li>
+        <li>
+          Pembuangan limbah dan polusi udara yang memperburuk kualitas udara.
+        </li>
+      </ul>
+      <p><b>Latihan:</b></p>
+      <ul>
+        <li>Apa saja penyebab utama perubahan iklim?</li>
+        <li>Sebutkan cara-cara untuk mengurangi dampak perubahan iklim!</li>
+      </ul>
+    </section>
+
+    <footer>Edukasi Belajar Anak SD</footer>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navbar = document.getElementById("navbar");
+
+      // Toggle untuk layar kecil
+      menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("hidden");
+      });
+
+      // Pastikan menu terlihat pada layar besar
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+          navbar.classList.remove("hidden"); // Tampilkan menu
+        }
+      });
+    </script>
+  </body>
+</html>
